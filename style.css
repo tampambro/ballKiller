@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'SM_Text_NC';
+  src: url('./assets/SM_Text_NC.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #ebebeb;
+  font-family: SM_Text_NC;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  border: 5px solid #ebebeb;
+}
+
+.green {
+  color: rgb(17.4%, 50.7%, 17.4%);
+}
+
+#start {
+  position: absolute;
+  top: 80px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#score {
+  display: none;
+  position: absolute;
+  top: 80px;
+  font-size: 40px;
+}
+
+#missed {
+  display: none;
+  position: relative;
+  font-size: 40px;
+  margin: 0;
+}
+#missedResult {
+  color: red;
+}
+
+#time {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+}
+
+#restart {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  font-size: 40px;
+}
+
+#instruction {
+  position: absolute;
+  top: 20px;
+}

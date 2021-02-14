@@ -9,6 +9,7 @@ const missedResult = document.getElementById('missedResult');
 const time = document.getElementById('time');
 const restart = document.getElementById('restart');
 
+//States
 let fullTime = 60
 let roundTime = fullTime;
 let requestAnimationID;
@@ -26,7 +27,6 @@ const needleHeight = grid * 5;
 const needleWidth = grid / 5;
 const maxNeedlX = canvas.width - grid;
 
-//States
 const needle = {
   x: canvas.width / 2 - needleWidth / 2,
   y: grid / 3,
@@ -35,7 +35,6 @@ const needle = {
   dx: 0,
   tipY: grid / 3 + needleHeight,
 };
-
 let balls = [];
 let winds = [];
 
